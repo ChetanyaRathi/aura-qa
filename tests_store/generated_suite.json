@@ -1,0 +1,110 @@
+{
+  "name": "generated_suite",
+  "steps": [
+    {
+      "action": "goto",
+      "intent": "open the main quotes page",
+      "selector": "",
+      "value": "https://quotes.toscrape.com",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "click on the 'about' link for the first quote's author (Albert Einstein)",
+      "selector": "div.row:nth-of-type(2) > div.col-md-8:nth-of-type(1) > div.quote:nth-of-type(1) > span:nth-of-type(2) > a",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "verify that the 'Login' link is visible, indicating the page loaded correctly with the header",
+      "selector": "div.container > div.row.header-box:nth-of-type(1) > div.col-md-4:nth-of-type(2) > p > a",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "click the 'Quotes to Scrape' title to return to the homepage",
+      "selector": "div.container > div.row.header-box:nth-of-type(1) > div.col-md-8:nth-of-type(1) > h1 > a",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "verify that the 'Next \u2192' pagination link is visible, confirming return to the first page of quotes",
+      "selector": "div.col-md-8:nth-of-type(1) > nav > ul.pager > li.next > a",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "goto",
+      "intent": "open the main quotes page",
+      "selector": "",
+      "value": "https://quotes.toscrape.com",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "click on the 'inspirational' tag from the 'Top Ten Tags' list",
+      "selector": "div.container > div.row:nth-of-type(2) > div.col-md-4.tags-box:nth-of-type(2) > span.tag-item:nth-of-type(2) > a.tag",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "verify that the 'Login' link is visible, indicating the page loaded correctly with the header",
+      "selector": "div.container > div.row.header-box:nth-of-type(1) > div.col-md-4:nth-of-type(2) > p > a",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "click the 'Quotes to Scrape' title to return to the homepage",
+      "selector": "div.container > div.row.header-box:nth-of-type(1) > div.col-md-8:nth-of-type(1) > h1 > a",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "verify that the 'Next \u2192' pagination link is visible, confirming return to the first page of quotes",
+      "selector": "div.col-md-8:nth-of-type(1) > nav > ul.pager > li.next > a",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "goto",
+      "intent": "open the main quotes page",
+      "selector": "",
+      "value": "https://quotes.toscrape.com",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "click the 'Next \u2192' link to navigate to the second page of quotes",
+      "selector": "div.col-md-8:nth-of-type(1) > nav > ul.pager > li.next > a",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "verify that the 'Login' link is visible, indicating the page loaded correctly with the header",
+      "selector": "div.container > div.row.header-box:nth-of-type(1) > div.col-md-4:nth-of-type(2) > p > a",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "click the 'Quotes to Scrape' title to return to the first page of quotes",
+      "selector": "div.container > div.row.header-box:nth-of-type(1) > div.col-md-8:nth-of-type(1) > h1 > a",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "verify that the 'Next \u2192' pagination link is visible, confirming return to the first page of quotes",
+      "selector": "div.col-md-8:nth-of-type(1) > nav > ul.pager > li.next > a",
+      "value": "",
+      "expected": ""
+    }
+  ]
+}

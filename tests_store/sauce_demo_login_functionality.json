@@ -1,0 +1,89 @@
+{
+  "name": "Sauce Demo Login Functionality",
+  "steps": [
+    {
+      "action": "goto",
+      "intent": "open the login page",
+      "selector": "",
+      "value": "https://www.saucedemo.com/",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "enter a valid username",
+      "selector": "#user-name",
+      "value": "standard_user",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "enter a valid password",
+      "selector": "#password",
+      "value": "secret_sauce",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "submit login credentials to proceed",
+      "selector": "#login-button",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "goto",
+      "intent": "re-open the login page for a new test scenario",
+      "selector": "",
+      "value": "https://www.saucedemo.com/",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "enter a username for a locked-out account",
+      "selector": "#user-name",
+      "value": "locked_out_user",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "enter the associated password",
+      "selector": "#password",
+      "value": "secret_sauce",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "attempt to log in with locked credentials",
+      "selector": "#login-button",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "goto",
+      "intent": "re-open the login page for another test scenario",
+      "selector": "",
+      "value": "https://www.saucedemo.com/",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "leave the username field empty",
+      "selector": "#user-name",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "enter a password",
+      "selector": "#password",
+      "value": "secret_sauce",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "attempt to log in with a missing username",
+      "selector": "#login-button",
+      "value": "",
+      "expected": ""
+    }
+  ]
+}

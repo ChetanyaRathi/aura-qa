@@ -1,0 +1,7 @@
+playwright>=1.44
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+python-dotenv>=1.0
+google-generativeai>=0.5   # Gemini (default, free tier)
+groq>=0.9                  # Groq (backup, free tier)

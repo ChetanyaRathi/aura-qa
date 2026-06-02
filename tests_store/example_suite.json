@@ -1,0 +1,47 @@
+{
+  "name": "saucedemo_login",
+  "steps": [
+    {
+      "action": "goto",
+      "intent": "open the Sauce Demo login page",
+      "selector": "",
+      "value": "https://www.saucedemo.com/",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "the username input field",
+      "selector": "#user-name",
+      "value": "standard_user",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "the password input field",
+      "selector": "#password",
+      "value": "secret_sauce",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "the green Login button",
+      "selector": "#login-button",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "the products page title after logging in",
+      "selector": ".title",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_text",
+      "intent": "the page heading should say Products",
+      "selector": ".title",
+      "value": "",
+      "expected": "Products"
+    }
+  ]
+}

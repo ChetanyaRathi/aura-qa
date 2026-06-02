@@ -1,0 +1,47 @@
+{
+  "name": "Footer Links Navigation and Verification",
+  "steps": [
+    {
+      "action": "goto",
+      "intent": "open the automation.com homepage",
+      "selector": "",
+      "value": "https://www.automation.com/",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "verify the 'Privacy' link is visible in the footer",
+      "selector": "#privacy-link",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_text",
+      "intent": "verify the 'Privacy' link text is correct",
+      "selector": "#privacy-link",
+      "value": "",
+      "expected": "Privacy"
+    },
+    {
+      "action": "click",
+      "intent": "navigate to the Privacy Policy page",
+      "selector": "#privacy-link",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "verify the 'Privacy' link is still visible on the navigated page, indicating the footer loaded correctly",
+      "selector": "#privacy-link",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "verify the 'Cloudflare' link is visible on the navigated page, indicating the footer loaded correctly",
+      "selector": "div.footer-inner > div.footer-wrapper > div.footer-link-wrapper:nth-of-type(2) > span.footer-text:nth-of-type(1) > a",
+      "value": "",
+      "expected": ""
+    }
+  ]
+}

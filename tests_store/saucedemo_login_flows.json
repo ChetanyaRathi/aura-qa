@@ -1,0 +1,103 @@
+{
+  "name": "SauceDemo Login Flows",
+  "steps": [
+    {
+      "action": "goto",
+      "intent": "open the SauceDemo login page",
+      "selector": "",
+      "value": "https://www.saucedemo.com/",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "enter a valid username into the username field",
+      "selector": "#user-name",
+      "value": "standard_user",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "enter a valid password into the password field",
+      "selector": "#password",
+      "value": "secret_sauce",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "click the login button to submit credentials",
+      "selector": "#login-button",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "goto",
+      "intent": "open the SauceDemo login page for a new test",
+      "selector": "",
+      "value": "https://www.saucedemo.com/",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "enter a valid username into the username field",
+      "selector": "#user-name",
+      "value": "standard_user",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "enter an incorrect password into the password field",
+      "selector": "#password",
+      "value": "wrong_password",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "click the login button to attempt login with incorrect password",
+      "selector": "#login-button",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "verify the login button is still visible after a failed login attempt",
+      "selector": "#login-button",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "goto",
+      "intent": "open the SauceDemo login page for another test",
+      "selector": "",
+      "value": "https://www.saucedemo.com/",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "leave the username field empty (do not fill)",
+      "selector": "#user-name",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "fill",
+      "intent": "enter a password into the password field",
+      "selector": "#password",
+      "value": "secret_sauce",
+      "expected": ""
+    },
+    {
+      "action": "click",
+      "intent": "click the login button to attempt login with missing username",
+      "selector": "#login-button",
+      "value": "",
+      "expected": ""
+    },
+    {
+      "action": "assert_visible",
+      "intent": "verify the login button is still visible after an incomplete login attempt",
+      "selector": "#login-button",
+      "value": "",
+      "expected": ""
+    }
+  ]
+}
